@@ -83,3 +83,33 @@ void check()
 	}
 		return;
 }
+
+/*Output:
+
+                SHIFT REDUCE PARSER
+
+GRAMMER
+
+E->E+E
+E->E/E
+E->E*E
+E->a/b
+enter the input symbol: a+a*a
+STACK IMPLEMENTATION TABLE
+
+STACK           INPUT SYMBOL            ACTION
+______          _____
+
+$               a+a*a$                  __
+$a               +a*a$          shift
+$E               +a*a$          E->a
+$E+               a*a$          shift+
+$E+a               *a$          shifta
+$E+E               *a$          E->a
+$E                 *a$          E->E*E
+$E*                 a$          shift*
+$E*a                 $          shifta
+$E*E                 $          E->a
+$E                   $          E->E*E
+$E                   $          ACCEPT
+*/

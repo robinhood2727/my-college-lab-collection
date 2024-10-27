@@ -67,3 +67,17 @@ void Eprime()
 		Eprime();
 	}
 }
+
+/*
+Output:
+
+Enter an Algebraic expression:  a+a*a
+
+ the expression a+a*a is valid
+
+
+Enter an Algebraic expression:  a+a*
+
+ the expression a+a* is invalid
+
+*/

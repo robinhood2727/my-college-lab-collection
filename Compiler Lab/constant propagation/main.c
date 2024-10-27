@@ -53,3 +53,14 @@ void main(){
 	check();
 	display();
 }
+/*
+Enter no of productions: 3
+Enter 3 productions:
+a=3
+b=a
+c=a+b
+optimized code: 
+a=3
+b=3
+c=3+3
+*/

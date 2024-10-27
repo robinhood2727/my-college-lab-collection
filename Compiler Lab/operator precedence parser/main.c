@@ -89,3 +89,52 @@ void main()
     }
     printf("\n");
 }
+
+/*
+Output:
+Enter the no.of terminals:4
+
+Enter the terminals:+*a$
+
+Enter the table values:
+Enter the value for + +:>
+Enter the value for + *:<
+Enter the value for + a:<
+Enter the value for + $:>
+Enter the value for * +:>
+Enter the value for * *:>
+Enter the value for * a:<
+Enter the value for * $:>
+Enter the value for a +:>
+Enter the value for a *:>
+Enter the value for a a:=
+Enter the value for a $:>
+Enter the value for $ +:<
+Enter the value for $ *:<
+Enter the value for $ a:<
+Enter the value for $ $:=
+
+OPERATOR PRECEDENCE TABLE:
+        +       *       a       $
+
++ |     >       <       <       >
+* |     >       >       <       >
+a |     >       >       =       >
+$ |     <       <       <       =
+
+Enter the input string(append with $):a+a*a$
+
+STACK               INPUT STRING               ACTION
+
+$                    a+a*a$                  Shift a
+$<a                   +a*a$                  Reduce
+$                     +a*a$                  Shift +
+$<+                    a*a$                  Shift a
+$<+<a                   *a$                  Reduce
+$<+                     *a$                  Shift *
+$<+<*                    a$                  Shift a
+$<+<*<a                   $                  Reduce
+$<+<*                     $                  Reduce
+$<+                       $                  Reduce
+$                         $                  String is ACCEPTED
+*/

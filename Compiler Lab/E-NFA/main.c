@@ -171,3 +171,46 @@ void print_e_closure(int i){
 void Print_S_state(int i){
 	printf("{q%d}\t",start);
 }
+
+/*
+Output:
+Enter the number of alphabets:
+3
+
+Enter alphabets:
+a
+b
+e
+Enter the number of states:
+3
+Enter the start state:
+1
+Enter the number of final states:
+1
+Enter the final states:
+3
+Enter no of transitions:
+6
+
+Enter transitions:
+1a1
+1e2
+2b2
+2e3
+3a3
+3b3
+
+Equivalent NFA without epsilon
+---------------------------
+start state:{q1}
+Alphabets:abe
+States:{q1}{q2}{q3}
+Transitions are....
+
+{q1}    a       {q1,q2,q3,}
+{q1}    b       {q2,q3,}
+{q2}    a       {q3,}
+{q2}    b       {q2,q3,}
+{q3}    a       {q3,}
+{q3}    b       {q3,}
+*/

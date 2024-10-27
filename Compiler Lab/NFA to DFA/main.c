@@ -131,3 +131,36 @@ int main() {
     printDFA();
     return 0;
 }
+
+/*
+Output:
+
+Enter number of states in the NFA: 3
+Enter number of transitions in NFA: 5
+Enter transitions (format: fromState inputSymbol toState):
+A0A
+A1A
+A0B
+B0C
+B1C
+Enter initial state: A
+Enter final states (as a string, e.g. C): C
+
+DFA Transition Table:
+State A:
+  On input '0' -> AB
+  On input '1' -> A
+State AB:
+  On input '0' -> ABC
+  On input '1' -> AC
+State ABC:
+  On input '0' -> ABC
+  On input '1' -> AC
+State AC:
+  On input '0' -> AB
+  On input '1' -> A
+
+Final states in DFA:
+  ABC
+  AC
+*/

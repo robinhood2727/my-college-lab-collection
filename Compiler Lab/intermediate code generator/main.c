@@ -117,3 +117,12 @@ void main(){
 	for(i=0;i<count;i++)
 		printf("%s\n",threeaddress[i]);
 }
+
+/*Output:
+ Enter  the input expression: a+b-c
+
+ Three Address code for the expression:
+
+z=b-c
+y=a+z
+*/

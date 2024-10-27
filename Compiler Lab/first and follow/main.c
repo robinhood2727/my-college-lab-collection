@@ -75,3 +75,20 @@ void follow(char c)
 		}
 	}
 }
+
+/*
+Output:
+Enter the no of productions: 
+2
+Enter the productions: 
+E-ABc
+B-a
+Enter the elements whose first & follow is to be found:E
+First(E)={}
+Follow (E)={$}
+continue (0/1)?1
+Enter the elements whose first & follow is to be found:B
+First(B)={a}
+Follow (B)={c}
+continue (0/1)?0
+*/

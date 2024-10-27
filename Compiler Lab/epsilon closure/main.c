@@ -59,3 +59,27 @@ int main(){
     return 0;
     
 }
+
+/*
+Output:
+
+Enter the no of states: 3
+
+Enter no of transitions: 6
+
+Enter the states: ABC
+
+Enter the transitions in the format 'state input nextstate' (eg: 'AOB'):
+AeB
+AeC
+B1B
+BeC
+C0C
+C1C
+
+e-closure of A is {A,B,C,}
+
+e-closure of B is {B,C,}
+
+e-closure of C is {C,}
+*/
