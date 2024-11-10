@@ -1,23 +1,6 @@
 #include<stdio.h>
 #include<string.h>
-char eclosure[20][20],states[10],sym[3]="01",st[20][20];
-int checkstate(char x[][20],int i,char y)
-{
-    int f=0;
-    for (int a = 0; a < strlen(x[i]); a++)
-    {
-        if (x[i][a]==y)
-        {
-            f=1;
-            break;
-        }
-    }
-    if(f==0)
-        return 1;
-    else
-        return 0;
-    
-}
+char eclosure[20][20],states[10],st[20][20];
 
 int main(){
     int i,nt,k,j;
