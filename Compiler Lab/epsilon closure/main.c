@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<string.h>
-char eclosure[20][20],states[10],sym[3]="01",st[20][20];
+char eclosure[20][20],states[10],st[20][20];
 int main(){
     int i,nt,k,j;
     char state,state1,state2,input;
